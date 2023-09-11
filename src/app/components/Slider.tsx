@@ -33,9 +33,9 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className=" flex flex-col h-[calc(100vh-122px)]">
-      <div className="flex-1 flex justify-center items-center gap-5 flex-col text-red-500 font-bold">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl text-center">
+    <div className=" flex flex-col lg:flex-row h-[calc(100vh-122px)] lg:h-[calc(100vh-112px)] bg-fuchsia-50">
+      <div className="flex-1 p-2 md:p-6 flex justify-center items-center gap-5 flex-col  text-red-500 font-bold">
+        <h1 className="text-5xl md:text-6xl  text-center uppercase ">
           {" "}
           {data[currentSlide].title}{" "}
         </h1>
