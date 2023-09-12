@@ -2,15 +2,15 @@
 import React from "react";
 import Countdown from "react-countdown";
 
-const endingDate = new Date("2023-09-14");
-const inSecond = endingDate.getTime();
+const endingDate = new Date("2023-10-14");
+
 console.log(endingDate);
 
 const CountDown = () => {
   return (
     <div>
       <div className="font-bold text-3xl text-yellow-300">
-        <Countdown date={inSecond} />
+        <Countdown date={endingDate} />
       </div>
     </div>
   );
