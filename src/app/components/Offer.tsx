@@ -1,6 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import CountDown from "./CountDown";
+import dynamic from "next/dynamic";
+
+const DynamicComponent = dynamic(() => import("./CountDown"), {
+  ssr: false,
+});
 
 const Offer = () => {
   return (
@@ -15,7 +19,7 @@ const Offer = () => {
           Progressively simplify effective e-toilers and process-centric methods
           of empowerment. Quickly pontificate parallel.
         </p>
-        <CountDown></CountDown>
+        <DynamicComponent></DynamicComponent>
         <button className="bg-red-500 p-3 rounded-md">Order Now</button>
       </div>
       {/* Img container */}
