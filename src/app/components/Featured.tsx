@@ -36,7 +36,7 @@ const Featured = () => {
           </div>
         ))}
       </div>
-      <span className="absolute left-5 top-0 text-sm animate-pulse bg-slate-700 text-white p-1 transition-all ease-in">
+      <span className="absolute left-4 top-1 text-sm animate-pulse bg-slate-700 text-white p-1 transition-all ease-in">
         Scroll →{" "}
       </span>
     </div>
