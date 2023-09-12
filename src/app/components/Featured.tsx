@@ -4,9 +4,9 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className="w-screen overflow-x-scroll  text-red-500 mt-6">
+    <div className="w-screen  overflow-x-scroll  scroll-container text-red-500 mt-6">
       {/* Wrapper */}
-      <div className="w-max flex p-2">
+      <div className="w-max flex p-2  ">
         {/* single item */}
         {featuredProducts.map((product) => (
           <div
