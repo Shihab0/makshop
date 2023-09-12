@@ -4,7 +4,7 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className="w-screen  overflow-x-scroll  scroll-container text-red-500 mt-6">
+    <div className="w-screen relative overflow-x-scroll  scroll-container text-red-500 mt-6">
       {/* Wrapper */}
       <div className="w-max flex p-2  ">
         {/* single item */}
@@ -36,6 +36,9 @@ const Featured = () => {
           </div>
         ))}
       </div>
+      <span className="absolute left-5 top-0 text-sm animate-pulse bg-slate-700 text-white p-1 transition-all ease-in">
+        Scroll →{" "}
+      </span>
     </div>
   );
 };
