@@ -4,7 +4,7 @@ import React from "react";
 
 const MenuPage = () => {
   return (
-    <div className="p-4 lg:px-16  h-[calc(100vh-112px)] md:h-[calc(100vh-120px)] flex flex-col md:flex-row justify-center items-center">
+    <div className="px-4 py-2 lg:px-16  h-[calc(100vh-112px)] md:h-[calc(100vh-120px)] flex flex-col md:flex-row justify-center items-center">
       {menu.map((category) => (
         <Link
           key={category.id}
