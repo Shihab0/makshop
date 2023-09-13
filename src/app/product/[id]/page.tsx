@@ -5,10 +5,10 @@ import React from "react";
 
 const SingleProduct = () => {
   return (
-    <div className="p-4 lg:p-16 flex flex-col justify-around items-center text-red-500 md:flex-row h-[80vh]">
+    <div className="p-4 lg:p-16 flex flex-col justify-center items-center text-red-500 md:flex-row h-[80vh]">
       {/* img container */}
       {singleProduct.img && (
-        <div className="relative w-1/2 h-1/2">
+        <div className="relative w-full flex-1 h-full">
           <Image
             className="object-contain"
             src={singleProduct.img}
@@ -18,9 +18,9 @@ const SingleProduct = () => {
         </div>
       )}
       {/* text container */}
-      <div>
-        <h1 className="font-semibold text-2xl">{singleProduct.title}</h1>
-        <p className="text-sm">{singleProduct.desc}</p>
+      <div className="flex-1 flex flex-col gap-3">
+        <h1 className="font-bold text-3xl uppercase">{singleProduct.title}</h1>
+        <p className="">{singleProduct.desc}</p>
         <Price
           price={singleProduct.price}
           id={singleProduct.id}
