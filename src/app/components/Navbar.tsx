@@ -5,7 +5,7 @@ import Cart from "./Cart";
 import Image from "next/image";
 
 const Navbar = () => {
-  const user = true;
+  const user = false;
   return (
     <div className="flex font-semibold justify-between items-center uppercase border-b-2 border-b-red-500 h-16 text-red-500 p-4 lg:px-16 md:px-10 ">
       {/* Left links */}
