@@ -9,7 +9,7 @@ type props = {
 
 const Price = ({ price, id, options }: props) => {
   const [total, setTotal] = useState(price);
-  const [quantity, setQuantity] = useState(4);
+  const [quantity, setQuantity] = useState(1);
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
